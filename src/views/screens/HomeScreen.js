@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet, ScrollView} from 'react-native';
 import NaviButton from '../components/NaviButton';
 
-const ButtonScreen = ({navigation}) => {
+const HomeScreen = ({navigation}) => {
   return (
     <>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -17,13 +17,20 @@ const ButtonScreen = ({navigation}) => {
               onPress={() => navigation.navigate('Week1')}
             />
           </View>
+
+          <View style={styles.section}>
+            <NaviButton
+              title="week 2"
+              onPress={() => navigation.navigate('Week2')}
+            />
+          </View>
         </View>
       </ScrollView>
     </>
   );
 };
 
-export default ButtonScreen;
+export default HomeScreen;
 
 const styles = StyleSheet.create({
   container: {

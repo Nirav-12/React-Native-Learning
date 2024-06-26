@@ -1,9 +1,9 @@
 import React from 'react';
 import {} from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Week1Screen from '../screens/Week1/Week1Screen';
+import Week1Home from '../screens/Week1';
 import DebugScreen from '../screens/Week1/DebugScreen';
-import UInavigation from './UiNavigation';
+import UInavigation from '../screens/Week1/BasicUIComp';
 import UicomponentScreen from '../screens/Week1/UicomponentScreen';
 import LoginScreen from '../screens/Week1/LoginScreen';
 import SignupScreen from '../screens/Week1/SignupScreen';
@@ -16,7 +16,7 @@ const Stack = createNativeStackNavigator();
 const Week1Navigation = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
-      <Stack.Screen name="Week1Home" component={Week1Screen} />
+      <Stack.Screen name="Week1Home" component={Week1Home} />
       <Stack.Screen name="Debug" component={DebugScreen} />
       <Stack.Screen name="UiNavigation" component={UInavigation} />
       <Stack.Screen name="UIComponent" component={UicomponentScreen} />

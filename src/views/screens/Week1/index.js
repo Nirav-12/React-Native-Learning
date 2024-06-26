@@ -6,9 +6,9 @@ import {
   StyleSheet,
   ScrollView,
 } from 'react-native';
-import NaviButton from '../components/NaviButton';
+import NaviButton from '../../components/NaviButton';
 
-const ButtonScreen = ({navigation}) => {
+const Week1Home = ({navigation}) => {
   return (
     <View>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -78,7 +78,7 @@ const ButtonScreen = ({navigation}) => {
   );
 };
 
-export default ButtonScreen;
+export default Week1Home;
 
 const styles = StyleSheet.create({
   container: {
