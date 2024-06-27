@@ -24,6 +24,13 @@ const HomeScreen = ({navigation}) => {
               onPress={() => navigation.navigate('Week2')}
             />
           </View>
+
+          <View style={styles.section}>
+            <NaviButton
+              title="week 3"
+              onPress={() => navigation.navigate('Week3')}
+            />
+          </View>
         </View>
       </ScrollView>
     </>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ReactNativeLearning</string>
+    <string name="facebook_app_id">435681109374284</string>
+<string name="facebook_client_token">a717483750e83f924bed157aed0b25af</string>
 </resources>
